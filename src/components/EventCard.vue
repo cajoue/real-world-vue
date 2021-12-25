@@ -8,25 +8,18 @@
 <script>
 export default {
   name: "EventCard",
-  // props: {
-  //   msg: String,
-  // },
-  data(){
-    return {
-      event: {
-        id: 245,
-        category: 'animal welfare',
-        title: 'Dog adoption day',
-        description : 'Find your new canine friend at this event',
-        location : 'Bark Island',
-        date : '28 January 2022',
-        time : '12:00',
-        petsAllowed : true,
-        organiser : 'Kaye Nine',
-      }
-    }
-  }
+  props: {
+    event: {
+      type: Object,
+      required: true
+    },
+  },
 };
+
+/* 
+a child component (EventCard) with a prop (event) receives data 
+fed to it from a parent component (Home) with data (events) 
+ */
 </script>
 
 <style scoped>
