@@ -18,7 +18,7 @@ export default {
 
 /* 
 a child component (EventCard) with a prop (event) receives data 
-fed to it from a parent component (Home) with data (events) 
+fed to it from a parent component (EventList) with data (events) 
  */
 </script>
 

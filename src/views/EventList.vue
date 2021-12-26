@@ -10,7 +10,7 @@
 import EventCard from "@/components/EventCard.vue"
 
 export default {
-  name: "Home",
+  name: "EventList",
   components: {
     EventCard,
   },
@@ -55,7 +55,7 @@ export default {
   }
 }
 
-/* a parent component (Home) creates child components (EventCard)
+/* a parent component (EventList) creates child components (EventCard)
 it holds data (events) to feed to child components having a 'prop' (:event) 
 
 As we iterate over the events array to create a new EventCard for each event object, 
